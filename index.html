@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eve</title>
+    <link rel="icon" href="image/eve_logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="preload">
+      <div class="preload-spinner">
+      </div>
+      <img src="image/svg/eve_logo.svg" alt="" class="spinner">
+    </div>
+
+    <nav>
+      <a href="#profile" class="hidenavbar" >Profile</a>
+      <a href="#anime" class="hidenavbar">Anime</a>
+      <a href="#" ><img src="Image/eve_logo.png" class="logo"/></a>
+      <a href="#event" class="hidenavbar">Live</a>
+      <a href="#discography" class="hidenavbar">Discography</a>
+      <li class="menu-button" ><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+      <div class="sidebar">
+        <a href="#profile" >Profile</a>
+        <a href="#anime" >Anime</a>
+        <a href="#event" >Live</a>
+        <a href="#discography" >Discography</a>
+      </div>
+    </nav>
+    
+    
+    <header>
+      <h1>EVE</h1>
+      <video
+        class="radioVid"
+        height="506"
+        width="900"
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+      >
+        <source src="Image/Radio.mp4" type="video/mp4" />
+      </video>
+
+      <div class="close">
+        <button><img src="Image/svg/x-circle.svg" /></button>
+      </div>
+
+      <div class="container_song">
+        <div class="slidersong">
+          <div class="slide" data-slide="1">
+            <h1>Dramaturgy</h1>
+            <button id="slide-1" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-1"
+              src="Audio/Dramaturgy.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+          <div class="slide" data-slide="2">
+            <h1>Fight Song</h1>
+            <button id="slide-2" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-2"
+              src="Audio/FightSong.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="3">
+            <h1>Kaikai Kitan</h1>
+            <button id="slide-3" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-3"
+              src="Audio/KaikaiKitan.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="4">
+            <h1>Outsider</h1>
+            <button id="slide-4" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-4"
+              src="Audio/Outsider.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="5">
+            <h1>Last Dance</h1>
+            <button id="slide-5" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-5"
+              src="Audio/Last Dance.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="6">
+            <h1>Yoku</h1>
+            <button id="slide-6" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-6"
+              src="Audio/Yoku.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="7">
+            <h1>Okinimesumama</h1>
+            <button id="slide-7" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-7"
+              src="Audio/Okinimesumama.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+
+          <div class="slide" data-slide="8">
+            <h1>Ao No Waltz</h1>
+            <button id="slide-8" class="play-button">
+              <img src="Image/svg/play.svg" />
+            </button>
+            <audio
+              id="background-music-8"
+              src="Audio/Ao No Waltz.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+        </div>
+        <div class="controls">
+          <div id="back">Back</div>
+          <div id="forvard">Next</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="parallax">
+      <button id="chooseSong">Select Song</button>
+      <button id="stopSong">Stop Song</button>
+    </div>
+
+    <div class="profile" id="profile">
+      <div class="cursor"></div>
+      <div class="biografi" data-aos="fade-right" data-aos-duration="7000">
+        <h1>EVE</h1>
+        <h3>Singer - Songwriter - Vocaloid Producer</h3>
+        <p>After 2 self-produced msuic albums, Eve released the national distribution board album<span>「 OFFICIAL NUMBER 」</span>.
+          The indie album<span>「Culture」</span>released on December 13, 2017 was his first all-self-composed songs,<span>「Dramaturgy」「As You Like It」</span> which was included in this album, has exceeded 100 million plays.
+          The number of YouTube subscribers exceeds 4 million.<br>
+
+          <br>The one-man live shows in 2018, 2019 including the <span>「winter tour 2019-2020 turbulent dining table」</span> mobilized 12,000 people,
+          The tickets were sold out immediately.
+          On February 6, 2019, the Album <span>「Otogi」</span> was released, <span>「Smile」</span>released on February 12, 2020 won
+          the 2nd place on the Oricon album chart, and <span>「Kaikaikitan / Aono Waltz」</span> released
+          on December 23, 2020 won the 1st place, and the recorded song “Kaikai Kitan” exceeded
+          300 million the streaming, and YouTube exceeded 250 million playbacks.</p>
+        
+      </div>
+      <div class="eve-img" data-aos="fade-left" data-aos-duration="7000">
+        <img src="Image/EveProfile.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="anime">
+      <h1 id="anime">Anime Collaboration</h1>
+      <hr class="line left" >
+      <hr class="line right">
+      <div class="list-song">
+      <div class="song">
+        <img src="Image/anime/BNHA.jpg" alt="">
+        <div class="title-anime">
+        <h2>Bokura no</h2>
+        <p>From Boku no Hero Academia (2022)</p>
+      </div>
+      </div>
+      <div class="song">
+        <img src="Image/anime/ChainsawMan.jpg" alt="">
+        <div class="title-anime">
+          <h2>Fight Song</h2>
+          <p>From Chainsaw Man (2022)</p>
+        </div>
+      </div>
+      <div class="song">
+        <img src="Image/anime/Bubble.jpg" alt="">
+        <div class="title-anime">
+          <h2><span>Bubble feat. Uta</span></h2>
+          <p>From Bubble (2022)</p>
+        </div>
+      </div>
+      <div class="song">
+        <img src="Image/anime/JosetoSora.jpg" alt="">
+        <div class="title-anime">
+          <h2><span>Ao no Waltz & Shinkai</span></h2>
+          <p>From Josee to Tora to Sakana-tachi (2020)</p>
+        </div>
+      </div>
+      <div class="song">
+        <img src="Image/anime/JujutsuKaisen.jpg" alt="">
+        <div class="title-anime">
+          <h2>Kaikai Kitan</h2>
+          <p>From Jujutsu Kaisen (2020)</p>
+        </div>
+      </div>
+      <div class="song">
+        <img src="Image/anime/Dororo.jpg" alt="">
+        <div class="title-anime">
+          <h2>Yamiyo</h2>
+          <p>From Dororo (2019)</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="event" >
+      <div class="event-title" id="event">
+        <h1>LIVE PEFORMANCE</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url(image/img1.jpg)"
+          >
+            <img src="image/Eve Asia Tour 2024 追加公演 [文化].jpg" alt="Image" />
+            <div class="concertTeks">
+              <h1>Eve Asia Tour 2024<br>追加公演 [文化]</h1>
+              <h3>Schedule</h3>
+              <p>
+                8月20日(火) 東京・有明アリーナ 17:30 open / 19:00 start<br>
+                8月21日(水) 東京・有明アリーナ 17:30 open / 19:00 start
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(image/GOhC3uNaEAA9kCZ.jfif)"
+          >
+            <img src="image/EveCulture.jpg" alt="Image" />
+            <div class="concertTeks">
+              <h1>Eve Asia Tour 2024 <br>[Culture]</h1>
+              <h3>Schedule</h3>
+              <p>
+                5月8日（水）香港 MacPherson Stadium <br />5月12日（日）ソウル
+                YES24 LIVE HALL <br />5月22日（水） シンガポール The Theatre at
+                Media Corp <br />5月24日（金）クアラルンプール Zepp KUALA LUMPUR
+                <br />5月26日（日）ジャカルタ TENNIS INDOOR SENAYAN
+                <br />6月5日(水) 台北 Zepp New Taipei
+                <br />6月9日（日）神奈川・横浜BUNTAI
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(image/img3.jpg)"
+          >
+            <img src="image/EveLIve2023.jpeg" alt="Image" />
+            <div class="concertTeks">
+              <h1>EVE LIVE 2023 ( 花嵐 )</h1>
+              <h3>Schedule</h3>
+              <p>
+                2023/11/25(土) 18:00 open / 19:00 start <br />2023/11/26(日)
+                15:00 open / 16:00 start
+                <span> Saitama Super Arena</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(Image/arenatour23.jpg)"
+          >
+            <img src="image/ArenaTour2023.jpg" alt="Image" />
+            <div class="concertTeks">
+              <h1>Eve Arena Tour 2023 <br>［⻁狼来］
+
+              </h1>
+              <h3>Schedule</h3>
+              <p>
+                2023/8/19(土) 大阪・大阪城ホール　17:30 open / 19:00 start<br>
+                2023/8/20(日) 大阪・大阪城ホール　15:00 open / 16:30 start<br>
+                2023/8/26(土) 神奈川・ぴあアリーナMM 17:30 open / 19:00 start<br>
+                2023/8/27(日) 神奈川・ぴあアリーナMM 15:00 open / 16:30 start
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(image/Live22.jpg)"
+          >
+            <img src="image/LiveTour2022.jpg" alt="Image" />
+            <div class="concertTeks">
+              <h1>Eve Live Tour 2022<br>［廻人］
+
+              </h1>
+              <h3>Schedule</h3>
+              <p>
+                2022/4/8(金) 18:00 open / 19:00 start<br>
+                2022/4/17(日) 17:00 open / 18:00 start<br>
+                2022/4/22(金) 18:00 open / 19:00 start<br>
+                2022/4/24(日) 17:00 open / 18:00 start<br>
+                2022/4/28(木) 18:00 open / 19:00 start<br>
+                2022/5/4(水祝) 18:00 open / 19:00 start<br>
+                2022/5/5(木祝) 16:00 open / 17:00 start<br>
+                2022/5/23(月) 18:00 open / 19:00 start
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="list-discography">
+      <div class="swiper mySwiper2 swiper-h">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-color: var(--color1);" >
+            <div class="album-single" >
+            <div class="list-album" >
+              <h1>ALBUM</h1>
+              <div class="list-card" >
+              <div class="card">
+              <img src="image/Album/Kaizin.jpg">
+              <h2>Kaizin</h2>
+              <a href="https://open.spotify.com/album/1Kmjj1yj98JJdJ4XoNjrI1?si=HkPKMerZTe26JnnvMSd-Pg" target="_blank"><span class="see-more">See more</span></a>
+              </div>
+              <div class="card">
+                <img src="image/Album/vocaloid01.jpg">
+                <h2>Eve Vocaloid 01</h2>
+                <a href="https://open.spotify.com/album/1WusjvpPQCoMmcNgF3WIlV?si=CXpx6yb_S3KRyQ_7ac9BGw" target="_blank"><span class="see-more">See more</span></a>
+                </div>
+                <div class="card">
+                  <img src="image/Album/kaikaiwarutsu.jpg">
+                  <h2>Kaikai Kitan/Ao No Waltz</h2>
+                  <a href="https://open.spotify.com/album/6BZjN6j79mjz7PJfGmvCR1?si=x7ZyXhw5QauuzQGzH8qCcw" target="_blank"><span class="see-more">See more</span></a>
+                  </div>
+                  <div class="card">
+                    <img src="image/Album/Smile.jpg">
+                    <h2>Smile</h2>
+                    <a href="https://open.spotify.com/album/6A6B0189k4kfQlSy1NzAsx?si=3f29xPd9QbihRFoBr0dcog" target="_blank"><span class="see-more">See more</span></a>
+                    </div>
+                    <div class="card">
+                      <img src="image/Album/otogi.jpg">
+                      <h2>Otogi</h2>
+                      <a href="https://open.spotify.com/album/0DPYGljGMyfZU00CGnDJJo?si=TVggUSKZQBiQiy1KMlftZw" target="_blank"><span class="see-more">See more</span></a>
+                      </div>
+                      <div class="card">
+                        <img src="image/Album/blue.jpg">
+                        <h2>Ao</h2>
+                        <a href="https://open.spotify.com/album/2QWSqoeGoHB8OPMkVu1AHt?si=WQ35DlrbQ3qemW-EtppLBQ" target="_blank"><span class="see-more2">See more</span></a>
+                        </div>
+                        <div class="card">
+                          <img src="image/Album/bunka.jpg">
+                          <h2>Bunka</h2>
+                          <a href="https://open.spotify.com/album/2rrihVXNDB7FSe6EFs2inI?si=dd4oqUBzTZ2yo3JV2IlltA" target="_blank"><span class="see-more2">See more</span></a>
+                          </div>
+                          <div class="card">
+                            <img src="image/Album/officialnumber.jpg">
+                            <h2>OFFICIAL NUMBER</h2>
+                            <a href="https://open.spotify.com/album/2AxkAqRmDqZJB03UPQaC0B?si=O2zavEkyQ4GJ0CxF-sKgdg" target="_blank"><span class="see-more2">See more</span></a>
+                            </div>
+                            <div class="card">
+                              <img src="image/Album/roundrobin.jpg">
+                              <h2>Round Robin</h2>
+                              <a href="https://open.spotify.com/album/0crZBnPLO6rcP1BsZl20ug?si=OsADhiG3SciGnFnfJw_sZg" target="_blank"><span class="see-more2">See more</span></a>
+                              </div>
+                              <div class="card">
+                                <img src="image/Album/wonderword.jpg">
+                                <h2>Wonder Word</h2>
+                                <a href="https://open.spotify.com/album/1RKJFdPlDfbLxIvzpr6w8K?si=FteQnr8KSQ6QmmkJz_Lqow" target="_blank"><span class="see-more2">See more</span></a>
+                                </div>
+                    </div>
+                    </div>
+
+                    <div class="new-release">
+                      <h3>NEW RELEASE</h3>
+                      <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide single">
+                            <img src="image/Banner/Like The Flatwoods Monster.jpg" alt="">
+                            <a href="https://open.spotify.com/album/4lLvbKgQ1GGMLmCn9Fz1QR?si=khjsjgWcTzSmG3OABulT0g" target="_blank"><p><img src="image/svg/arrow.svg" alt="">2024.5.3 Release</p></a>
+                          </div>
+                          <div class="swiper-slide single">
+                            <img src="image/Banner/Glorius day.jpg" alt="">
+                            <a href="https://open.spotify.com/album/6Ovp9dcCxs7SHtVVkm2nzL?si=7yvjNn3aTGO1pHw5oicUhw" target="_blank"><p><img src="image/svg/arrow.svg" alt=""> <span>2024.3.9 Release</span></p></a>
+                          </div>
+                          <div class="swiper-slide single">
+                            <img src="image/Banner/Insomnia.jpg" alt="">
+                            <a href="https://open.spotify.com/album/51QJlvJclfVB6jNNXlDatS?si=2hH0MasgTDKYzCXLiogY3A" target="_blank"><p><img src="image/svg/arrow.svg" alt="">2024.3.1 Release</p></a>
+                          </div>
+                          <div class="swiper-slide single">
+                            <img src="image/Banner/Pray.jpg" alt="">
+                            <a href="https://open.spotify.com/album/0oxb7UtZLAmpBjHZ0mM1PD?si=swZQ0cjqS4mRka57ObuR_g" target="_blank"><p><img src="image/svg/arrow.svg" alt="">2024.1.13 Release</p></a>
+                          </div>
+                          <div class="swiper-slide single">
+                            <img src="image/Banner/Touhikou.jpg" alt="">
+                            <a href="https://open.spotify.com/album/6AU5EVaR9fZQpJL3aB0VK6?si=RlqHf3JeQnSq-aKEVNZqIA" target="_blank"><p><img src="image/svg/arrow.svg" alt="">2023.12.25 Release</p></a>
+                          </div>
+                          
+                          
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="album-icon">
+                      <img src="image/EveIcon.png"
+                    </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="discography" id="discography">
+                  <div class="album">
+                    <div class="border"></div>
+                    <img src="image/EveAlbum.jfif" />
+                    <h1><span>A</span>lbum</h1>
+                    <img class="kaset" src="Image/ZingaiCd(1).png" />
+                  </div>
+                  <div class="movie">
+                    <div class="border"></div>
+                    <a href="https://www.netflix.com/id/title/81450005" target="_blank"><img src="Image/adam_by_eve.jpg" alt=""></a>
+                    <h1><span>M</span>ovie</h1>
+                  </div>
+                  <div class="character">
+                    <div class="border"></div>
+                    <video width="180" height="auto" autoplay muted loop>
+                      <source src="Image/EveShort.mp4" type="video/mp4" />
+                    </video>
+                    <h1><span>C</span>haracter</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider">
+              <!-- list Items -->
+              <div class="list" id="character">
+                  <div class="item active">
+                      <img src="image/Character/TobiotogiriBG.png">
+                      <div class="content">
+                          <p>命くん - Inochi</p>
+                          <h2>Tobi Otogiri</h2>
+                          <p>
+                              Hunting Shadows.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/DragongirlBG.webp">
+                      <div class="content">
+                          <p>龍子 - Ryuuko</p>
+                          <h2>Dragon Girl
+                            </h2>
+                          <p>
+                            Organization Leader
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/HitotsumeBG.jpeg">
+                      <div class="content">
+                          <p style="color: white;-webkit-text-stroke: 0.5px black;">
+                            ひとつめ様 - Cyclops</p>
+                          <h2 style="color:white;-webkit-text-stroke: 0.5px black;">Hitotsume</h2>
+                          <p style="color: white;-webkit-text-stroke: 0.5px black;">
+                            Zingai
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/ZukinBG.png">
+                      <div class="content">
+                          <p style="color: white;">ズキンちゃん</p>
+                          <h2 style="color: white;">Zukin-chan</h2>
+                          <p style="color: white;">
+                            Zingai
+                          </p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/KouBG.png">
+                      <div class="content">
+                          <p>行</p>
+                          <h2>Kou-Kun</h2>
+                          <p>
+                              Touhikou
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- button arrows -->
+              <div class="arrows" style="display: none;">
+                  <button id="prev"><</button>
+                  <button id="next">></button>
+              </div>
+              <!-- thumbnail -->
+              <div class="thumbnail">
+                  <div class="item active">
+                      <img src="image/Character/TobiOtogiri.jpg">
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/Dragongirl.webp">
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/Hitotsume.jpg">
+                      
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/Zukin-chan.webp">
+                      
+                  </div>
+                  <div class="item">
+                      <img src="image/Character/Kou.jpg">
+                      
+                  </div>
+              </div>
+          </div>
+      
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="banner">
+        <a href="https://www.toysfactory.co.jp/" target="_blank"><img src="image/Banner/toysfactory.png" alt=""></a>
+        <a href="https://eveofficial-culture.com/" target="_blank"><img src="image/Banner/culture.png" alt=""></a>
+        <a href="https://www.eveofficialstore.com/" target="_blank"><img src="image/Banner/evestore.png" alt=""></a>
+    </div>
+    
+    <footer>
+      <p>© 2024 Eve / TOY'S FACTORY</p>
+      <div class="sosmed">
+        <ul>
+          <li><a href="https://www.instagram.com/eve_harapeco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="image/logo/icon_sns_white_12.png" alt=""></a></i></li>
+          <li><a href="https://twitter.com/oo0eve0oo?lang=ja" target="_blank"><img src="image/logo/icon_sns_twitter_white.png" alt=""></a></i></li>
+          <li><a href="https://www.youtube.com/user/ooo0eve0ooo" target="_blank"><img src="image/logo/icon_sns_white_3.png" alt=""></a></i></li>
+          <li><a href="https://line.me/ti/p/%40oo0eve0oo" target="_blank"><img src="image/logo/icon_sns_white_11.png" alt=""></a></i></li>
+          <li><a href="https://vt.tiktok.com/ZSRg9VJdg/" target="_blank"><img src="image/logo/icon_sns_tiktok_white.png" alt=""></a></i></li>
+          <li><a href="https://www.nicovideo.jp/mylist/17255242" target="_blank"><img src="image/logo/icon_sns_nikoniko_white.png" alt=""></a></i></li>
+          <li><a href="https://weibo.com/u/6973726765" target="_blank"><img src="image/logo/icon_sns_white_15.png" alt=""></a></i></li>
+        </ul>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
